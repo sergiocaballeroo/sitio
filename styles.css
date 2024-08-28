@@ -1,0 +1,117 @@
+/* Estilos para el body */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #f2f4f3; /* Texto en blanco humo */
+    background-color: #22333B; /* Fondo en gunmetal */
+    margin: 0;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #0a0908; /* Color negro */
+    color: #f2f4f3; /* Texto en blanco humo */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f2f4f3;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #22333B; /* Fondo en gunmetal */
+    color: #f2f4f3; /* Texto en blanco humo */
+    border-radius: 5px;
+}
+
+/* Estilos para el main */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0a0908; /* Color negro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la sección de introducción */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #22333B; /* Fondo en gunmetal */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00020800; /* Borde negro transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: scaleUp 1s ease-in-out;
+}
+
+/* Estilos para las tarjetas de biografía */
+.bio-card {
+    background-color: #22333B; /* Fondo en gunmetal */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.bio-card h2 {
+    font-size: 1.8em;
+    color: #f2f4f3; /* Texto en blanco humo */
+    margin-bottom: 10px;
+}
+
+.bio-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #f2f4f3; /* Texto en blanco humo */
+    margin-bottom: 10px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
